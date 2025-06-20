@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tienda de juguetes con catálogo interactivo, carrusel y detalles de productos." />
+    <title>Tienda de Juguetes</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>🎁 Tienda de Juguetes</h1>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrusel -->
+    <section class="carousel" aria-label="Carrusel de productos destacados">
+        <div class="carousel-container">
+            <div class="carousel-item"><img src="juguete1.jpg" alt="Juguete 1 destacado" /></div>
+            <div class="carousel-item"><img src="juguete2.jpg" alt="Juguete 2 destacado" /></div>
+            <div class="carousel-item"><img src="juguete3.jpg" alt="Juguete 3 destacado" /></div>
+            <div class="carousel-item"><img src="juguete4.jpg" alt="Juguete 4 destacado" /></div>
+            <div class="carousel-item"><img src="juguete5.jpg" alt="Juguete 5 destacado" /></div>
+        </div>
+        <button id="prevBtn" aria-label="Anterior">⬅️</button>
+        <button id="nextBtn" aria-label="Siguiente">➡️</button>
+    </section>
+
+    <!-- Catálogo -->
+    <main>
+        <section class="catalog" aria-label="Catálogo de juguetes">
+            <div class="product" data-name="Juguete Interactivo" data-price="$250 MXN" data-description="Ideal para desarrollar habilidades motoras." data-material="Plástico resistente" data-age="3+ años" data-stock="Disponible">
+                <img src="juguete1.jpg" alt="Juguete Interactivo" />
+                <h2>Juguete Interactivo</h2>
+                <p>Precio: $250 MXN</p>
+                <a href="producto1.html" target="_blank" class="details-btn">Ver detalles</a>
+            </div>
+
+            <div class="product" data-name="Muñeco de acción" data-price="$300 MXN" data-description="Figura articulada con accesorios intercambiables." data-material="PVC resistente" data-age="5+ años" data-stock="Disponible">
+                <img src="juguete2.jpg" alt="Muñeco de acción" />
+                <h2>Muñeco de acción</h2>
+                <p>Precio: $300 MXN</p>
+                <a href="producto2.html" target="_blank" class="details-btn">Ver detalles</a>
+            </div>
+
+            <div class="product" data-name="Rompecabezas de Animales" data-price="$180 MXN" data-description="Desarrolla lógica y concentración en los niños." data-material="Cartón reciclado" data-age="6+ años" data-stock="Disponible">
+                <img src="juguete3.jpg" alt="Rompecabezas de Animales" />
+                <h2>Rompecabezas de Animales</h2>
+                <p>Precio: $180 MXN</p>
+                <a href="producto3.html" target="_blank" class="details-btn">Ver detalles</a>
+            </div>
+
+            <div class="product" data-name="Carrito de carreras" data-price="$220 MXN" data-description="Carrito metálico con ruedas de goma." data-material="Metal y plástico" data-age="4+ años" data-stock="Últimas piezas">
+                <img src="juguete4.jpg" alt="Carrito de carreras" />
+                <h2>Carrito de carreras</h2>
+                <p>Precio: $220 MXN</p>
+                <a href="producto4.html" target="_blank" class="details-btn">Ver detalles</a>
+            </div>
+
+            <div class="product" data-name="Osito de peluche" data-price="$280 MXN" data-description="Suave, tierno y lavable." data-material="Tela de felpa" data-age="Todas las edades" data-stock="Disponible">
+                <img src="juguete5.jpg" alt="Osito de peluche" />
+                <h2>Osito de peluche</h2>
+                <p>Precio: $280 MXN</p>
+                <a href="producto5.html" target="_blank" class="details-btn">Ver detalles</a>
+                
+     
+</div>
+            </div>
+        </section>
+
+    <!-- Modal de detalles -->
+    <div id="productModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display: none;">
+        <div class="modal-content">
+            <span class="close" role="button" aria-label="Cerrar ventana">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p><strong>Precio:</strong> <span id="modalPrice"></span></p>
+            <p><strong>Descripción:</strong> <span id="modalDescription"></span></p>
+            <p><strong>Material:</strong> <span id="modalMaterial"></span></p>
+            <p><strong>Edad recomendada:</strong> <span id="modalAge"></span></p>
+            <p><strong>Disponibilidad:</strong> <span id="modalStock"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tienda de Juguetes | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
